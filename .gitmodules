@@ -1,0 +1,3 @@
+[submodule "purejavahidapi"]
+	path = purejavahidapi
+	url = git@github.com:nyholku/purejavahidapi.git
