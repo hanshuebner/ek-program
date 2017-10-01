@@ -11,10 +11,12 @@ The protocol of the EK-20 is USB HID based.  To program keys, feature
 reports need to be send to the device using report ID 1.  Each
 programming packet consists of 130 bytes:
 
+```
 0: Command (0x10 => press, 0x20 => release)
 1: Key Number
 2: Length of definition (0-127)
 3-129: Definition ...
+```
 
 The definition is ASCII string with keys spelled out,
 e.g. "<LCtrl>a".
@@ -23,6 +25,7 @@ The press and release definition are defined by two separate commands.
 
 Special key names:
 
+```
 <**MyTab**>
 <App>
 <BackSpace>
@@ -139,3 +142,4 @@ Special key names:
 <henkan/zenkouho>
 <hiragana/katakana>
 <muhenkan>
+```
